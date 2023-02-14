@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mt-sp-service-api-weixin" />
+        <module name="mt-sp-service-api" />
+        <module name="mt-sp-service-weixin" />
+        <module name="mt-sp-service-api-member" />
+        <module name="mt-sp-service-impl" />
+        <module name="mt-sp-service-base" />
+        <module name="mt-sp-service-member" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mt-sp-service-api" options="-parameters" />
+      <module name="mt-sp-service-api-member" options="-parameters" />
+      <module name="mt-sp-service-api-weixin" options="-parameters" />
+      <module name="mt-sp-service-base" options="-parameters" />
+      <module name="mt-sp-service-impl" options="-parameters" />
+      <module name="mt-sp-service-member" options="-parameters" />
+      <module name="mt-sp-service-weixin" options="-parameters" />
+    </option>
+  </component>
+</project>
