@@ -7,5 +7,10 @@ spring:
       discovery:
         ###nacos注册地址
         server-addr: 127.0.0.1:8848
+  datasource:
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mayikt-member?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
 server:
   port: 7070
