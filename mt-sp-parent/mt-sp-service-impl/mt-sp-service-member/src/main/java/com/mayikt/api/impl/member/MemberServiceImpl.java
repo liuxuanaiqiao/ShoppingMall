@@ -17,12 +17,12 @@ public class MemberServiceImpl extends BaseApiService<String> implements MemberS
         return weChatServiceFeign.getWeChat(a);
     }
 
-    @Override
-    public BaseResponse<String> addMember(String userName, String pwd, Integer age) {
-        if(StringUtils.isEmpty(userName)){
-            return setResultError("userName is null error");
-        }
-        int j= 1/age;
-        return setResultSuccess("success");
-    }
+//    @Override
+//    public BaseResponse<String> addMember(String userName, String pwd, Integer age) {
+//        if(StringUtils.isEmpty(userName)){
+//            return setResultError("userName is null error");
+//        }
+//        int j= 1/age;
+//        return setResultSuccess("success");
+//    }
 }

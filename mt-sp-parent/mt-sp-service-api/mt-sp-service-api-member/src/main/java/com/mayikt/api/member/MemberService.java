@@ -19,6 +19,6 @@ public interface MemberService {
      * 不符合规范
      * @return
      */
-    @GetMapping("addMember")
-    BaseResponse<String> addMember(String userName, String pwd, Integer age);
+//    @GetMapping("addMember")
+//    BaseResponse<String> addMember(String userName, String pwd, Integer age);
 }
