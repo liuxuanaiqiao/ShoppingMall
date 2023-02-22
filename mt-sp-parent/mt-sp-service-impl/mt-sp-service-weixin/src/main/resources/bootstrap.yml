@@ -1,0 +1,33 @@
+spring:
+  application:
+    ###服务的名称
+    name: mayikt-weixin
+  cloud:
+    nacos:
+      discovery:
+        ###nacos注册地址
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+  datasource:
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mayikt-weixin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+server:
+  port: 9000
+wx:
+  mp:
+    configs:
+      - appId: 1111 （一个公众号的appid）
+        secret: 1111（公众号的appsecret）
+        token: 111 （接口配置里的Token值）
+
+mayikt:
+  member:
+    weixin:
+      login:
+        templateId: tY59tRbfzLn6-MSXakAUEIIYeVqAbCblOFvezqtj3Xs

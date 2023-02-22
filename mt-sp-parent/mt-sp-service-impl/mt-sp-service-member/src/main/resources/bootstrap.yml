@@ -1,0 +1,28 @@
+server:
+  port: 7070
+spring:
+  application:
+    ###服务的名称
+    name: mayikt-member
+  cloud:
+    nacos:
+      discovery:
+        ###nacos注册地址
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+  profiles:
+    active: dev
+#  datasource:
+#    password: 123456
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/mayikt-member?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+#    username: root
+#logging:
+#  level:
+#    ###打印mybatis日志
+#    com.mayikt.api.impl.mapper : debug
+#
+#mayikt:
+#  userName: prd-mayikt
